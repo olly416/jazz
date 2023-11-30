@@ -1,0 +1,65 @@
+/* Color, Size */
+:root{
+    /* color */
+    --color-dark_purple: #ae4a8a;
+    --color-light_purple: #C377DB;
+    --color-dark_pink: #cc71c7;    
+    --color-hot_pink: #FF72C6;
+    --color-navy: #001A37;
+    --color-fontBlack:rgb(51, 51, 51);
+    
+    /* font */
+    --fontSize : 16px;
+    --fontTitle: calc(var(--fontSize) * 2);
+    --fontSmallTitle: calc(var(--fontSize) * 1.5);
+}
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1;
+    margin: -1px;
+    overflow: hidden;
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+  }
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+html{
+  overscroll-behavior: none;
+}
+body{
+    color:#111;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: var(--fontSize);
+    text-align: center;
+}
+body *{
+  box-sizing: border-box;
+}
+.pc_layout{
+  width: 100%;
+}
+.scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+img{
+    display:inline-block;
+    vertical-align: top;
+}
+h2{
+    font-size: var(--fontTitle);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom:25px;
+}
+h3{
+    font-size: var(--fontSmallTitle);    
+    font-weight: 700;
+}
+
