@@ -1,6 +1,6 @@
 //// ------------------------  Load :: Header & Footer  ------------------------ ////
 $('#header').load('/html/header.html');
-$('#header').load('/html/header.html');
+
 
 //// --------------------------------  Modal & Cookies -------------------------------- ////
 const modal = $("#Modal");

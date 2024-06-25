@@ -551,6 +551,17 @@ section.ticket::before {
   -o-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
+.info .info-menu > div:nth-child(2):hover {
+  color: var(--color-dark_pink);
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 5px var(--color-dark_pink) inset;
+  box-shadow: 0 0 0 5px var(--color-dark_pink) inset;
+}
+.info .info-menu > div:nth-child(2):hover .info_inner {
+  border-color: var(--color-dark_pink);
+  background-color: #fff;
+  color: var(--color-dark_pink);
+}
 
 /* -- Section : photo -- */
 .photo {
@@ -584,6 +595,10 @@ section.photo::after {
 }
 .photo h2 {
   margin-bottom: 30px;
+}
+.photo p {
+  font-size:16px;
+  margin-bottom: 30px;  
 }
 .photoSlide {
   display: block;
@@ -1293,6 +1308,7 @@ footer .footerBottom {
   .ticket .ticket1 {
     margin-top: 60px;
   }
+  
 
   /* Directions */
   .directions #map,
@@ -1586,18 +1602,7 @@ footer .footerBottom {
     -webkit-transition: 0.45s ease-in-out;
     -o-transition: 0.45s ease-in-out;
     transition: 0.45s ease-in-out;
-  }
-  .info .info-menu > div:nth-child(2):hover {
-    color: var(--color-dark_pink);
-    background: #fff;
-    -webkit-box-shadow: 0 0 0 5px var(--color-dark_pink) inset;
-    box-shadow: 0 0 0 5px var(--color-dark_pink) inset;
-  }
-  .info .info-menu > div:nth-child(2):hover .info_inner {
-    border-color: var(--color-dark_pink);
-    background-color: #fff;
-    color: var(--color-dark_pink);
-  }
+  }  
 
   /*  PC_Photo */
   .photo {
@@ -1606,7 +1611,7 @@ footer .footerBottom {
     border-radius: 80px 0 0 0;
   }
   .photo h2 {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
   .photoSlide {
     overflow: hidden;

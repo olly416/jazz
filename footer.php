@@ -1,10 +1,10 @@
 <footer>
   <div class="terms">
     <div class="terms-info">
-      <a href=""> 개인정보처리방침 </a>
+      <a href="#"> 개인정보처리방침 </a>
     </div>
     <div class="terms-condition">
-      <a href=""> 이용약관 </a>
+      <a href="#"> 이용약관 </a>
     </div>
   </div>
   <div class="copyright">
