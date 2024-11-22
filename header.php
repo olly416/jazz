@@ -8,14 +8,14 @@
     <nav>
       <ul>
         <li>
-          <a href="program.html">PROGRAM</a>
+          <a href="#">PROGRAM</a>
           <ul class="subMenu">
             <li><a href="artist.html" class="allowedLink">ARTIST</a></li>
             <li><a href="#">TIMETABLE</a></li>
           </ul>
         </li>
         <li>
-          <a href="ticket.html">TICKET</a>
+          <a href="#">TICKET</a>
           <ul class="subMenu">
             <li><a href="#">예매안내</a></li>
             <li><a href="#">인터파크</a></li>

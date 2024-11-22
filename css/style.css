@@ -58,8 +58,8 @@
 /* --------------- HEADER --------------- */
 header {
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 55px;
   padding: 20px 0;
@@ -78,9 +78,6 @@ header .logo a {
 header .logo a img {
   width: 100%;
   height: 100%;
-  image-rendering: -o-crisp-edges; /* opera */
-  transform:translateZ(0);
-  backface-visibility: visible;
 }
 header nav {
   position: fixed;
@@ -97,9 +94,6 @@ header nav {
 }
 header nav.toggle {
   right: 0;
-}
-#map > div:nth-child(2) > div > a {
-  display: none !important;
 }
 header nav > ul {
   width: calc(100% - 60px);
@@ -170,13 +164,12 @@ header .btn span {
   height: 4px;
   border-radius: 10px;
   background-color: var(--color-dark_purple);
-  -webkit-transition: -webkit-transform 0.3s
-    cubic-bezier(0.57, 0.21, 0.69, 1.25);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
   transition: -webkit-transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
   -o-transition: transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
   transition: transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
   transition: transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
-    -webkit-transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+  -webkit-transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
 }
 header .btn span.btn-bar_top {
   -webkit-transform-origin: top left;
@@ -220,15 +213,15 @@ header .btn span.btn-bar_bottom.toggle {
 header .snsBox {
   display: inline-block;
   position: absolute;
-  bottom: 30px;
   left: 30px;
+  bottom: 30px;
 }
 header .snsBox a {
   margin-right: calc(var(--fontSize) * 0.875);
 }
 header .snsBox img {
-  width: calc(var(--fontSize) * 2.2);
-  height: calc(var(--fontSize) * 2.2);
+  width: 40px;
+  height: 40px;
 }
 
 /* ---------------  BODY  --------------- */
@@ -294,24 +287,16 @@ main {
   animation: Main-FontBlink 3.2s infinite ease-in;
 }
 @-webkit-keyframes Main-ArrowDown {
-  80% {
-    bottom: -20px;
-    opacity: 0;
-  }
-  100% {
+  80%, 100% {
     bottom: -20px;
     opacity: 0;
   }
 }
 @keyframes Main-ArrowDown {
-  80% {
+  80%, 100% {
     bottom: -20px;
     opacity: 0;
-  }
-  100% {
-    bottom: -20px;
-    opacity: 0;
-  }
+  } 
 }
 @-webkit-keyframes Main-FontBlink {
   65% {
@@ -356,7 +341,6 @@ main {
 }
 
 /* -- Section : ticket -- */
-
 .ticket {
   position: relative;
   padding: 40px 0 55px;
@@ -451,13 +435,11 @@ section.ticket::before {
 }
 @-webkit-keyframes Ticket-Moving {
   to {
-    -webkit-transform: rotate(15deg);
     transform: rotate(15deg);
   }
 }
 @keyframes Ticket-Moving {
   to {
-    -webkit-transform: rotate(15deg);
     transform: rotate(15deg);
   }
 }
@@ -470,9 +452,9 @@ section.ticket::before {
   position: relative;
 }
 .info .info-menu {
-  color: #fff;
   width: 290px;
   margin: 50px auto 10px;
+  color: #fff;
 }
 .info .info-menu i {
   font-size: calc(var(--fontSize) * 1.5);
@@ -491,7 +473,6 @@ section.ticket::before {
   -webkit-transition: -webkit-transform 0.35s ease-in-out;
   transition: -webkit-transform 0.35s ease-in-out;
   -o-transition: transform 0.35s ease-in-out;
-  transition: transform 0.35s ease-in-out;
   transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
 }
 .info .info-menu div:nth-child(2) i,
@@ -522,13 +503,6 @@ section.ticket::before {
 .info .info-menu p.buttonUp {
   -webkit-animation: buttonUp 0.7s forwards ease-in-out;
   animation: buttonUp 0.7s forwards ease-in-out;
-}
-@-webkit-keyframes buttonUp {
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
 }
 @keyframes buttonUp {
   100% {
@@ -601,7 +575,6 @@ section.photo::after {
   margin-bottom: 30px;  
 }
 .photoSlide {
-  display: block;
   position: relative;
   width: 100%;
   height: 460px;
@@ -658,7 +631,6 @@ section.photo::after {
   border-right: 5px solid var(--color-navy);
 }
 .photoSlide-controller_index div {
-  display: block;
   width: 20.5%;
   height: 100%;
   background-color: #555;
@@ -759,7 +731,6 @@ section.photo::after {
   overflow: hidden;
   position: absolute;
   top: 0;
-  right: 0;
   left: 50%;
   width: 100%;
   height: 100%;
@@ -906,7 +877,6 @@ section.photo::after {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  width: 80%;
   margin: 0 auto;
 }
 
@@ -935,7 +905,6 @@ footer .terms a {
 footer .copyright p {
   width: 290px;
   margin: 10px 25px 0;
-  color: #fff;
   font-size: 12px;
   text-align: left;
   line-height: 2;
@@ -985,27 +954,7 @@ footer .footer_snsBox img {
 footer .footerBottom {
   width: 100%;
   height: 35px;
-  margin-top: 20px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#c46bbf),
-    color-stop(20%, #cb6fc6),
-    color-stop(40%, #cb6fc6),
-    color-stop(60%, #f266bd),
-    color-stop(80%, #f266bd),
-    to(#ae4a8a)
-  );
-  background: -o-linear-gradient(
-    left,
-    #c46bbf 0%,
-    #cb6fc6 20%,
-    #cb6fc6 40%,
-    #f266bd 60%,
-    #f266bd 80%,
-    #ae4a8a 100%
-  );
+  margin-top: 20px; 
   background: linear-gradient(
     90deg,
     #c46bbf 0%,

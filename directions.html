@@ -80,18 +80,18 @@
     <script>
       var HOME_PATH = window.HOME_PATH || ".";
       var olympicPark = new naver.maps.LatLng(37.519989, 127.122772),
-        map = new naver.maps.Map("map", {
-          center: olympicPark,
-          zoom: 15,
-          scaleControl: false,
-          logoControl: false,
-          mapDataControl: false,
-          zoomControl: false,
-        }),
-        marker = new naver.maps.Marker({
-          map: map,
-          position: olympicPark,
-        });
+          map = new naver.maps.Map("map", {
+            center: olympicPark,
+            zoom: 15,
+            scaleControl: false,
+            logoControl: false,
+            mapDataControl: false,
+            zoomControl: false,
+          }),
+          marker = new naver.maps.Marker({
+            map: map,
+            position: olympicPark,
+          });
 
       var contentString = [
         '<div class="iw_inner">',

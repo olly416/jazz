@@ -1,9 +1,5 @@
 //// ------------------------  Load :: Header & Footer  ------------------------ ////
 $('#header').load('/html/header.html');
-<<<<<<< HEAD
-
-=======
->>>>>>> 577c3f9fd5d1a875ce6ba526474d9f1a717ae399
 
 //// --------------------------------  Modal & Cookies -------------------------------- ////
 const modal = $("#Modal");
@@ -39,7 +35,6 @@ function checkCookie(name){
   }else{
     modal.css('display','block');
   }
-
 }
 
 
@@ -266,8 +261,6 @@ function photoSlide_PC(){
     nextPhotoSlide();
   }
 }
-
-
 
 
 

@@ -16,7 +16,7 @@
 .hidden {
     position: absolute;
     width: 1px;
-    height: 1;
+    height: 1px;
     margin: -1px;
     overflow: hidden;
     -webkit-clip-path: polygon(0 0, 0 0, 0 0);
@@ -34,9 +34,6 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: var(--fontSize);
     text-align: center;
-}
-body *{
-  box-sizing: border-box;
 }
 .pc_layout{
   width: 100%;
